@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      JS题（1） | 何进霖 blog 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="zhishikong">
+    
+    
+
+    <meta name="description" content="在FreeCodeCamp遇到一个题：用JS将给定的数字转换成罗马数字，以下是我想的解题方法（可行通过，仅限4000以内的数）。12345678910111213141516171819202122232425262728function convert(num) &amp;#123; var arr = [[&apos;&apos;,&apos;I&apos;,&apos;II&apos;,&apos;III&apos;,&apos;IV&apos;,&apos;V&apos;,&apos;VI&apos;,&apos;VII&apos;,&apos;VIII&apos;,&apos;IX">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS题（1） | 何进霖 blog">
+<meta property="og:url" content="http://yoursite.com/2017/10/08/fcc1/index.html">
+<meta property="og:site_name" content="何进霖 blog">
+<meta property="og:description" content="在FreeCodeCamp遇到一个题：用JS将给定的数字转换成罗马数字，以下是我想的解题方法（可行通过，仅限4000以内的数）。12345678910111213141516171819202122232425262728function convert(num) &amp;#123; var arr = [[&apos;&apos;,&apos;I&apos;,&apos;II&apos;,&apos;III&apos;,&apos;IV&apos;,&apos;V&apos;,&apos;VI&apos;,&apos;VII&apos;,&apos;VIII&apos;,&apos;IX">
+<meta property="og:updated_time" content="2017-10-05T07:31:15.752Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JS题（1） | 何进霖 blog">
+<meta name="twitter:description" content="在FreeCodeCamp遇到一个题：用JS将给定的数字转换成罗马数字，以下是我想的解题方法（可行通过，仅限4000以内的数）。12345678910111213141516171819202122232425262728function convert(num) &amp;#123; var arr = [[&apos;&apos;,&apos;I&apos;,&apos;II&apos;,&apos;III&apos;,&apos;IV&apos;,&apos;V&apos;,&apos;VI&apos;,&apos;VII&apos;,&apos;VIII&apos;,&apos;IX">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.jpg">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">何进霖 blog</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+        <p class="panel-cover__description">
+          低调
+        </p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">首页</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">联系</a></li>
+              
+                
+                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">JS题（1）</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2017-10-08" class="post-meta__date date">2017-10-08</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <h4 id="在FreeCodeCamp遇到一个题：用JS将给定的数字转换成罗马数字，以下是我想的解题方法（可行通过，仅限4000以内的数）。"><a href="#在FreeCodeCamp遇到一个题：用JS将给定的数字转换成罗马数字，以下是我想的解题方法（可行通过，仅限4000以内的数）。" class="headerlink" title="在FreeCodeCamp遇到一个题：用JS将给定的数字转换成罗马数字，以下是我想的解题方法（可行通过，仅限4000以内的数）。"></a>在FreeCodeCamp遇到一个题：用JS将给定的数字转换成罗马数字，以下是我想的解题方法（可行通过，仅限4000以内的数）。</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">convert</span>(<span class="params">num</span>) </span>&#123;</div><div class="line"> <span class="keyword">var</span> arr = [[<span class="string">''</span>,<span class="string">'I'</span>,<span class="string">'II'</span>,<span class="string">'III'</span>,<span class="string">'IV'</span>,<span class="string">'V'</span>,<span class="string">'VI'</span>,<span class="string">'VII'</span>,<span class="string">'VIII'</span>,<span class="string">'IX'</span>],<span class="comment">//个位</span></div><div class="line">            [<span class="string">''</span>,<span class="string">'X'</span>,<span class="string">'XX'</span>,<span class="string">'XXX'</span>,<span class="string">'XL'</span>,<span class="string">'L'</span>,<span class="string">'LX'</span>,<span class="string">'LXX'</span>,<span class="string">'LXXX'</span>,<span class="string">'XC'</span>],<span class="comment">//百位</span></div><div class="line">            [<span class="string">''</span>,<span class="string">'C'</span>,<span class="string">'CC'</span>,<span class="string">'CCC'</span>,<span class="string">'CD'</span>,<span class="string">'D'</span>,<span class="string">'DC'</span>,<span class="string">'DCC'</span>,<span class="string">'DCCC'</span>,<span class="string">'CM'</span>,<span class="string">'M'</span>],<span class="comment">//十位</span></div><div class="line">            [<span class="string">''</span>,<span class="string">'M'</span>,<span class="string">'MM'</span>,<span class="string">'MMM'</span>,<span class="string">'IV'</span>,<span class="string">'V'</span>,<span class="string">'VI'</span>,<span class="string">'VII'</span>,<span class="string">'VIII'</span>,<span class="string">'IX'</span>]<span class="comment">//千位</span></div><div class="line">           ];</div><div class="line">  <span class="comment">//罗马数字I=1,V=5,X=10,L=50,C=100,D=500,M=1000;</span></div><div class="line"></div><div class="line"> <span class="keyword">var</span> sum = []; <span class="comment">//结果容器</span></div><div class="line"> <span class="keyword">var</span> s = num.toString(); <span class="comment">//获取num字符串</span></div><div class="line"> <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;s.length;i++)&#123;</div><div class="line">   sum[i] = <span class="built_in">parseInt</span>(s[i]);  <span class="comment">//获取个(十百千)位整数</span></div><div class="line">   <span class="keyword">if</span>(sum[i] === <span class="number">0</span>) sum[i] = <span class="string">""</span>; <span class="comment">//罗马数字没有0</span></div><div class="line"> &#125; </div><div class="line"></div><div class="line"> sum.reverse(); <span class="comment">//使零位等于个位，以此类推...</span></div><div class="line"> <span class="keyword">for</span>(<span class="keyword">var</span> y=<span class="number">0</span>;y&lt;sum.length;y++)&#123;  <span class="comment">//循环遍历sum</span></div><div class="line">    <span class="keyword">if</span>(sum[y])&#123;</div><div class="line">    sum[y] = arr[y][sum[y]];     <span class="comment">//个(十百千)位arr[y]等于对应的罗马数字sum[y]</span></div><div class="line">  &#125;</div><div class="line"> &#125; </div><div class="line"></div><div class="line"> sum = sum.reverse().join(<span class="string">""</span>);<span class="comment">//整合数组</span></div><div class="line"> <span class="keyword">return</span> sum;</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">convert(<span class="number">97</span>);</div></pre></td></tr></table></figure>
+
+  </section>
+
+  <section class="post-comments">
+
+    <!-- 将评论系统（例如Disqus、多说、友言、畅言等）提供的代码片段粘贴在这里 -->
+    
+</section>
+
+
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">&copy; 2014-2015. | 由<a href="https://hexo.io/">Hexo</a>强力驱动 | 主题<a href="https://github.com/someus/huno">Huno</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>
